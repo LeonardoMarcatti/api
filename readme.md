@@ -1,4 +1,4 @@
-1 - Execute o arquivo script.sql em seu DB.
+1 - Execute o arquivo script.sql em seu DB. \n
 2 - Copie a pasta api para seu servidor Apache2.
 3 - Abra seu Postman ou outro cliente semelhante e aponte a url para onde você copiou a pasta api. Ex: meu_caminho/api/products
 4 - Pode-se usar GET de duas formas:

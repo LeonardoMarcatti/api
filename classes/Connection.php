@@ -1,6 +1,5 @@
 <?php
     namespace classes;
-
     class Connection
     {
         private string $server = 'localhost';

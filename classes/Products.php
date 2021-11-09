@@ -72,7 +72,6 @@
             
             if ($product->rowCount() > 0) {
                 $result = $product->fetchAll(\PDO::FETCH_ASSOC);
-                header('Content-Type: application/json');
                 echo \json_encode($result);
             } else{
                 echo 'Not found';
@@ -92,7 +91,6 @@
                 $item['qte'] = $value['qte'];
                 $itens[] = $item;
             };
-            header('Content-Type: application/json');
             echo \json_encode($itens);
         }
 
@@ -106,8 +104,7 @@
                 $product->bindValue(':qte', $data->qte);
                 $product->bindValue(':preco', $data->preco);
                 $product->execute();
-
-                header('Content-Type: application/json');
+                
                 echo \json_encode(["success" => true]);
                 
             } else {
